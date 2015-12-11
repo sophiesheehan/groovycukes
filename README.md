@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sophiesheehan/groovycukes.svg?branch=master)](https://travis-ci.org/sophiesheehan/groovycukes)
+
 # Cucumber-Java Skeleton
 
 This is the simplest possible build script setup for Cucumber using Java.
