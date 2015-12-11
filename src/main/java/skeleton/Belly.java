@@ -4,7 +4,7 @@ public class Belly {
     private static final int BELLY_MAX_CUKES = 41;
     private static final int BELLY_MAX_TIME = 1;
     private static final String BELLY_GROWL = "GROWL";
-    private static final String BELLY_SILENT = "silent";
+    private static final String BELLY_SILENT = "be silent";
     private int cukes;
   
     public void eat(int cukes) {
