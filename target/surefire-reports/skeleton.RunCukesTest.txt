@@ -1,4 +1,70 @@
 -------------------------------------------------------------------------------
 Test set: skeleton.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.825 sec
+Tests run: 24, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 186.876 sec <<< FAILURE!
+When I click News(| http:\/\/www.bbc.co.uk | News | Home - BBC News |)  Time elapsed: 0.164 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"News"}
+Command duration or timeout: 29.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'sophiedarlings-cukesautomation-2280215', ip: '172.17.35.198', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-c9', java.version: '1.7.0_85'
+*** Element info: {Using=link text, value=News}
+Session ID: c7bce8ac-e334-464f-b1b6-8ebf36ffcc73
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:407)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at skeleton.Browse_Stepdefs.i_click(Browse_Stepdefs.java:40)
+	at ✽.When I click News(skeleton/browse.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"News"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'sophiedarlings-cukesautomation-2280215', ip: '172.17.35.198', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-c9', java.version: '1.7.0_85'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+| http:\/\/www.bbc.co.uk | News | Home - BBC News |  Time elapsed: 0.196 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"News"}
+Command duration or timeout: 29.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'sophiedarlings-cukesautomation-2280215', ip: '172.17.35.198', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-c9', java.version: '1.7.0_85'
+*** Element info: {Using=link text, value=News}
+Session ID: c7bce8ac-e334-464f-b1b6-8ebf36ffcc73
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:407)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at skeleton.Browse_Stepdefs.i_click(Browse_Stepdefs.java:40)
+	at ✽.When I click News(skeleton/browse.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"News"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'sophiedarlings-cukesautomation-2280215', ip: '172.17.35.198', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-c9', java.version: '1.7.0_85'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous6499533718588524618webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
