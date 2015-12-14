@@ -1,2 +1,3 @@
-/home/cabox/workspace/src/test/java/skeleton/RunCukesTest.java
-/home/cabox/workspace/src/test/java/skeleton/Belly_Stepdefs.java
+/home/ubuntu/workspace/src/test/java/skeleton/Belly_Stepdefs.java
+/home/ubuntu/workspace/src/test/java/skeleton/Browse_Stepdefs.java
+/home/ubuntu/workspace/src/test/java/skeleton/RunCukesTest.java

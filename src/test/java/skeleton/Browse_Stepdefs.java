@@ -10,38 +10,39 @@ import cucumber.api.PendingException;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+// using firefox as just cant get chrome to work
+// Xfvb :99 &
+// export DISPLAY=:99
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.By;
 
 public class Browse_Stepdefs {
-  private WebDriver webDriver;
+  private WebDriver browser;
   
   @Before
   public void before_Browse_Stepdefs(){
- // TODO: implement webdriver
-//    this.webDriver = new ChromeDriver();
+    browser = new FirefoxDriver();
   }
   
   @After
   public void after_Browse_StepsDefs() {
-//    this.webDriver.quit();
+    browser.quit();
   }
   
-  @Given("^I am on the home page$")                                                                                                                  
-  public void i_am_on_the_home_page() throws Throwable {                                                                                             
-      // Write code here that turns the phrase above into concrete actions                                                                           
-      throw new PendingException();                                                                                                                  
+  @Given("^I am on (.*)$")                                                                                                                  
+  public void i_am_on(String url) throws Throwable {
+    browser.get(url);
   }                                                                                                                                                  
 
-  @When("^I click browse$")                                                                                                                          
-  public void i_click_browse() throws Throwable {                                                                                                    
-      // Write code here that turns the phrase above into concrete actions                                                                           
-      throw new PendingException();                                                                                                                  
+  @When("^I click (.*)")                                                                                                                          
+  public void i_click( String link ) throws Throwable {
+      browser.findElement(By.linkText(link)).click();
   }                                                                                                                                                  
 
-  @Then("^I should be on the browse page$")                                                                                                          
-  public void i_should_be_on_the_browse_page() throws Throwable {                                                                                    
-      // Write code here that turns the phrase above into concrete actions                                                                           
-      throw new PendingException();                                                                                                                  
+  @Then("^I should be on (.*)$")                                                                                                          
+  public void i_should_see(String expectedTitle) throws Throwable {
+    
+    assertThat ( browser.getTitle(), is (expectedTitle) );
   }  
 }
