@@ -18,4 +18,5 @@ Feature: open Browse page
       | http://www.bbc.co.uk  | News      | Home - BBC News   |
       | http://www.bbc.co.uk  | Sport     | BBC Sport - Sport |
       | http://www.bbc.co.uk  | Weather   | BBC Weather       |
+      | http://www.bbc.co.uk  | Radio     | BBC - iPlayer Radio |
 
